@@ -115,10 +115,12 @@ const runAttackAction = async () => {
   return (
     <div className="arena-container">
          {boss && characterNFT && (
-      <div id="toast" className={showToast ? 'show' : ''}>
-        <div id="desc">{`💥 ${boss.name} was hit for ${characterNFT.attackDamage}!`}</div>
-      </div>
-    )}
+          <>
+            <div id="toast" className={showToast ? 'show' : ''}>
+              <div id="desc">{`💥 ${boss.name} was hit for ${characterNFT.attackDamage}!`}</div>
+            </div>
+                </>
+          )}
       {/* Boss */}
       {boss && (
       <div className="boss-container">
